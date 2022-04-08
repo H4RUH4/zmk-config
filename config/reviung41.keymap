@@ -72,14 +72,14 @@
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LALT>, <&kp LG(LS(LEFT))>, <&kp LGUI>;
+            bindings = <&kp LALT>, <&kp LG(LC(LEFT))>, <&kp LGUI>;
         };
         td1: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_1";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp RALT>, <&kp LG(LS(RIGHT))>, <&kp RGUI>;
+            bindings = <&kp RALT>, <&kp LG(LC(RIGHT))>, <&kp RGUI>;
         };
     };
 };
