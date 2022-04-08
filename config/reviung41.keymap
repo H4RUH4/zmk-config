@@ -34,6 +34,11 @@
             key-positions = <30 31 32>;
             bindings = <&to 4>;
         };
+        combo_partial {
+            timeout-ms = <50>;
+            key-positions = <28 29>;
+            bindings = <&kp LG(LS(S))>;
+        };
     };
 };
 
