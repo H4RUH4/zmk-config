@@ -42,7 +42,7 @@
         combo_code {
             timeout-ms = <30>;
             key-positions = <39 40>;
-            bindings = <&kp LG>;
+            bindings = <&kp LGUI>;
         };
     };
 };
