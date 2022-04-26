@@ -39,6 +39,11 @@
             key-positions = <36 37>;
             bindings = <&kp LG(LS(S))>;
         };
+        combo_code {
+            timeout-ms = <30>;
+            key-positions = <39 40>;
+            bindings = <&kp LG>;
+        };
     };
 };
 
