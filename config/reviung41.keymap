@@ -15,12 +15,12 @@
     combos {
         compatible = "zmk,combos";
         combo_esc {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
         combo_del {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             key-positions = <10 11>;
             bindings = <&kp DEL>;
         };
@@ -81,14 +81,14 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <400>;
             bindings = <&kp LALT>, <&kp LG(LC(LEFT))>, <&kp LGUI>;
         };
         td1: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_1";
             #binding-cells = <0>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <400>;
             bindings = <&kp RALT>, <&kp LG(LC(RIGHT))>, <&kp RGUI>;
         };
     };
