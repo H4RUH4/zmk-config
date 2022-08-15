@@ -89,7 +89,7 @@
             label = "TAP_DANCE_1";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
-            bindings = <&kp RALT>, <&kp LG(LC(RIGHT))>, <&kp RGUI>;
+            bindings = &kp RGUI, <&kp LG(LC(RIGHT))>;
         };
     };
 };
