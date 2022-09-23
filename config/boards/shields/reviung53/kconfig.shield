@@ -1,2 +1,0 @@
-config SHIELD_REVIUNG53
-    def_bool $(shields_list_contains,reviung53)
