@@ -99,7 +99,7 @@
         keymap {
                 compatible = "zmk,keymap";
 
-                default_layer {
+                default_layer { 
 // -------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  E  |  R  |  T  | xxxxx |  Y  |  U   |  I  |  O  |  P  |   BKSP    |
 // | CTRL |  A  |  S  |  D  |  F  |  G  | xxxxx |  H  |  J   |  K  |  L  |  ;  |     '     |
