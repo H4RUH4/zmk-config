@@ -14,76 +14,8 @@
             key-positions = <20 21>;
             bindings = <&kp DEL>;
         };
-        combo_default {
-            timeout-ms = <50>;
-            key-positions = <33 34 35>;
-            bindings = <&to 0>;
-        };
-        combo_combat {
-            timeout-ms = <50>;
-            key-positions = <30 31 32>;
-            bindings = <&to 4>;
-        };
-        combo_partial {
-            timeout-ms = <30>;
-            key-positions = <36 37>;
-            bindings = <&kp LG(LS(S))>;
-        };
-        combo_code {
-            timeout-ms = <30>;
-            key-positions = <39 40>;
-            bindings = <&kp LGUI>;
-        };
     };
 };
-
-/ {
-    behaviors {
-        upw: up_w {
-            compatible = "zmk,behavior-mod-morph";
-            label = "W_UP";
-            #binding-cells = <0>;
-            bindings = <&kp W>, <&kp UP>;
-            mods = <(MOD_RALT)>;
-        };
-        lefta: left_a {
-            compatible = "zmk,behavior-mod-morph";
-            label = "A_LEFT";
-            #binding-cells = <0>;
-            bindings = <&kp A>, <&kp LEFT>;
-            mods = <(MOD_RALT)>;
-        };
-        downs: down_s {
-            compatible = "zmk,behavior-mod-morph";
-            label = "S_DOWN";
-            #binding-cells = <0>;
-            bindings = <&kp S>, <&kp DOWN>;
-            mods = <(MOD_RALT)>;
-        };
-        rightd: right_d {
-            compatible = "zmk,behavior-mod-morph";
-            label = "D_RIGHT";
-            #binding-cells = <0>;
-            bindings = <&kp D>, <&kp RIGHT>;
-            mods = <(MOD_RALT)>;
-        };
-        td0: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_0";
-            #binding-cells = <0>;
-            tapping-term-ms = <400>;
-            bindings = <&kp LALT>, <&kp LG(LC(LEFT))>, <&kp LGUI>;
-        };
-        td1: tap_dance_1 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_1";
-            #binding-cells = <0>;
-            tapping-term-ms = <400>;
-            bindings = <&kp RGUI>, <&kp LG(LC(RIGHT))>;
-        };
-    };
-};
-
 
 / {
         keymap {
